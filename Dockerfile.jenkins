@@ -8,8 +8,4 @@ RUN apt-get update && apt-get install -y \
     g++ \
     curl
 
-# Add jenkins user to docker group
-RUN usermod -aG docker jenkins
-
-USER jenkins
 
